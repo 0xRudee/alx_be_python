@@ -1,3 +1,5 @@
-principal, rate, time = 1000, 0.05, 3
-I = principal*rate*time
-print(f"The simple interest is: {I:.1f}")
+principal = 1000
+rate = 0.05
+time = 3
+I = float(principal*rate*time)
+print(f"The simple interest is: {I}")
