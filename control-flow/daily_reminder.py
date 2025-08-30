@@ -1,6 +1,6 @@
-task = str(input("Describe the task: "))
-priority = str(input("What's the priority of it? (high/medium/low): "))
-time = str(input("Is it time_bound? (yes/no): "))
+task = str(input("Enter your task: "))
+priority = str(input("Priority (high/medium/low): "))
+time = str(input("Is it time-bound? (yes/no): "))
 task_date = ''
 
 match priority :
