@@ -16,15 +16,15 @@ def main():
 
         if choice == '1':
             os.system('cls')
-            item = str(input("What is the item you wish to add: "))
-            if (not item.isalpha()) and (not isinstance(item, str)):
+            item = str(input("Enter the item to add: "))
+            if not item.isalpha():
               print(f"The item '{item}' isn't a product")
               continue
             shopping_list.append(item)
 
         elif choice == '2':
             os.system('cls')
-            item = str(input("What is the item you wish to remove: "))
+            item = str(input("Enter the item to remove: "))
             if item not in shopping_list:
               print(f"The item '{item}' isn't in you shopping list")
               continue
