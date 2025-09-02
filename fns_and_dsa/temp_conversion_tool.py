@@ -6,11 +6,11 @@ temp = 0.0
 
 def convert_to_celsius():
     global temp
-    temp = (temperature * FAHRENHEIT_TO_CELSIUS_FACTOR)
+    temp = temperature * (FAHRENHEIT_TO_CELSIUS_FACTOR-32)
 
 def convert_to_fahrenheit():
     global temp
-    temp = (temperature * CELSIUS_TO_FAHRENHEIT_FACTOR)
+    temp = (temperature * CELSIUS_TO_FAHRENHEIT_FACTOR)+32
 
 while True:
     temperature = input("Enter the temperature to convert: ")
